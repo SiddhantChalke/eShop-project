@@ -1,0 +1,110 @@
+.cart{
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    width: 485px;
+    z-index: 5;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 7px -5px rgba(0, 0, 0, 0.5);
+    box-shadow: -6px 6px 14px 0px rgba(0, 0, 0, 0.5);
+    /* Glassmorph */
+    backdrop-filter: blur(14px) saturate(200%);
+        -webkit-backdrop-filter: blur(12px) saturate(200%);
+        background-color: rgba(255, 255, 255, 0.4);
+        border-radius: 6px;
+        border: 1px solid rgb(130 180 255 / 30%);
+}
+.carthead{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 0 1rem; 
+}
+.carthead h1{
+    color: rgb(15, 15, 15);
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0;
+}
+.carthead button{
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 1.2rem;
+    padding: 0 1rem;
+    -webkit-box-shadow: 4px 10px 24px -4px rgba(0,0,0,0.6);
+-moz-box-shadow: 4px 10px 24px -4px rgba(0,0,0,0.6);
+box-shadow: 4px 10px 24px -4px rgba(0,0,0,0.6);
+
+background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(252,252,252,0.5) 100%);
+}
+.item-image{
+    width: 8rem;
+    height: 9rem;
+   
+}
+.item-image img{
+    mix-blend-mode: multiply;
+    filter: contrast(1);
+    width: auto;
+    height: inherit;
+}
+
+.item .details{
+    width: 16rem;
+    height: 8rem;
+}
+.item .details h1{
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+}
+.checkout{
+    width: 40%;
+    height: 2rem;
+}
+.reset{
+    width: 40%;
+    height: 2rem;
+    margin-inline-start: 6rem;
+}
+.delete{
+    border: none;
+    font-size: 1.2rem;
+    color: red;
+    padding: 3px 2px;
+}
+@media screen and (max-width:768px) {
+    .cart{
+        width: 55vw;
+        right: 1rem;
+        min-height: 25vh;
+        
+    }
+}
+@media screen and (max-width:425px) {
+    .cart{
+        width: 88vw;
+        right: 0rem;
+        height: 90vh;
+    }
+    .reset,.checkout{
+        width: 30%;
+    }
+}
