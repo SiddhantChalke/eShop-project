@@ -47,8 +47,8 @@
     .filter-list{
         display: none;
     }
-    .inputItem-drop{
-        display: block;
+    #asc, #desc{
+        display: none;
     }
     .output{
         row-gap: 0.4rem;

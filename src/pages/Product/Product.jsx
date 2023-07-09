@@ -22,7 +22,7 @@ const Product = () => {
       <div className="image"><img src={image} alt="" /></div>
       <div className="info">
         <strong>{title}</strong>
-        <p>{description}</p>
+        <p id='descript'>{description}</p>
         <div className="product-price">
           <button onClick={()=> addToCart(product)}>+</button>
             <p>${price}</p>

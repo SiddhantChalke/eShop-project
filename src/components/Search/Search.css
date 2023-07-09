@@ -71,7 +71,7 @@
    }
    @media screen and (max-width:425px) {
     .search-div{
-        transform: translate(-0.5rem,1rem);
-        width: 100vw;
+        transform: translate(0rem,3.8rem);
+        width: 95.5vw;
     }
 }

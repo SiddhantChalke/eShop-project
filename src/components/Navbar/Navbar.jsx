@@ -1,4 +1,4 @@
-import React, {useState ,useContext } from 'react'
+import React, {useState ,useContext,useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
 import { SidebarContext } from '../../contexts/SidebarContext'
@@ -11,7 +11,17 @@ const Navbar = () => {
   const {open, setOpen} = useContext(SidebarContext)
   const {cartCount} = useContext(CartContext)
   const [isSearched, setIsSearched] = useState(false);
-  
+  let divRef = useRef();
+  useEffect(()=>{
+    let handler = (e)=>{
+      if(!divRef.current.contains(e.target)){
+        setIsSearched(!isSearched)
+      }
+    }
+    document.addEventListener('mousedown', handler);
+    return ()=> document.removeEventListener('mousedown', handler)
+  })
+
   return (
     <div className="navbar">
       <div className="left">

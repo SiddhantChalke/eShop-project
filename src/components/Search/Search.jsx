@@ -5,7 +5,7 @@ import './Search.css'
 const Search = () => {
     const {products} = useContext(ProductContext)
     const [searchTerm, setSearchTerm] = useState([''])
-
+    
   return (
     <div className='search-div'>
           <div id='search-bar'>

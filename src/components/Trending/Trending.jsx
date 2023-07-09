@@ -19,16 +19,16 @@ const Trending = () => {
           <span>Price filters</span>
         </div>
         <div className='filter-list'>
-          <div className="inputItem">
+          <div className="inputItem" id='range'>
             <span>0</span>
             <input type="range" min={0} max={1000} onChange={(e)=>setMaxPrice(e.target.value)}/>
             <span>{maxPrice}</span>
           </div>
-          <div className="inputItem">
+          <div className="inputItem" id='asc'>
             <input type="radio" id="asc" name='price' onChange={e=>setDesc('asc')}/>
             <label htmlFor="asc">Ascending (Lowest first)</label>
           </div>
-          <div className="inputItem">
+          <div className="inputItem" id='desc'>
             <input type="radio" id="desc" name='price' onChange={e=>setDesc('desc')}/>
             <label htmlFor="desc">Descending (Highest first)</label>
           </div>
