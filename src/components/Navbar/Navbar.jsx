@@ -11,16 +11,17 @@ const Navbar = () => {
   const {open, setOpen} = useContext(SidebarContext)
   const {cartCount} = useContext(CartContext)
   const [isSearched, setIsSearched] = useState(false);
-  let divRef = useRef();
-  useEffect(()=>{
-    let handler = (e)=>{
-      if(!divRef.current.contains(e.target)){
-        setIsSearched(!isSearched)
-      }
-    }
-    document.addEventListener('mousedown', handler);
-    return ()=> document.removeEventListener('mousedown', handler)
-  })
+
+  // let divRef = useRef();
+  // useEffect(()=>{
+  //   let handler = (e)=>{
+  //     if(!divRef.current?.contains(e.target)){
+  //       setIsSearched(false)
+  //     }
+  //   }
+  //   document.addEventListener('mousedown', handler);
+  //   return ()=> document.removeEventListener('mousedown', handler)
+  // })
 
   return (
     <div className="navbar">
@@ -36,7 +37,7 @@ const Navbar = () => {
           </div>
       </div>
       <div className="center">
-              <Link to='/' className='link' style={{color: 'black'}}>e.SHOP</Link>
+              <Link to='/http://SiddhantChalke.github.io/eShop-project' className='link' style={{color: 'black'}}>e.SHOP</Link>
       </div>
       <div className="right">
         <div className="search" onClick={()=> setIsSearched(!isSearched)}>

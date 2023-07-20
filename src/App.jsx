@@ -24,6 +24,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "http://SiddhantChalke.github.io/eShop-project",
+        // path:"/",
         element: <Home />
       },
       {

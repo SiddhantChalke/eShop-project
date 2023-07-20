@@ -13,6 +13,7 @@ const About = () => {
         <Link to='https://pexels.com' style={{textDecoration:'none'}}>Stock Images</Link>
       </p>
       <p>Connect with me: <br />Email : siddhantchalke20@gmail.com
+        <br /><Link to='https://siddhants-portfolio-site.webflow.io/' style={{textDecoration:'none'}}>Portfolio</Link>
         <br /><Link to='https://www.linkedin.com/in/siddhant-chalke-96b627215/' style={{textDecoration:'none'}}>LinkedIn</Link>
         <br /><Link to='https://github.com/SiddhantChalke' style={{textDecoration:'none'}}>Github</Link>
       </p>

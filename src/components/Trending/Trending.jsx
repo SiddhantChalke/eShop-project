@@ -8,7 +8,7 @@ const Trending = () => {
   const [maxPrice, setMaxPrice] = useState(1000)
   const [desc, setDesc] = useState(null)
     // get all products
-    // console.log(products)
+    console.log(products)
     const arr = [...products]
     if(desc=='desc'){arr.sort((a, b) => b.price - a.price) }
     else if(desc=='asc'){ arr.sort((a, b) => a.price - b.price)}
