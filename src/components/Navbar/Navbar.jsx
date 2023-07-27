@@ -37,7 +37,7 @@ const Navbar = () => {
           </div>
       </div>
       <div className="center">
-              <Link to='/http://SiddhantChalke.github.io/eShop-project' className='link' style={{color: 'black'}}>e.SHOP</Link>
+              <Link to='eShop-project' className='link' style={{color: 'black'}}>e.SHOP</Link>
       </div>
       <div className="right">
         <div className="search" onClick={()=> setIsSearched(!isSearched)}>
