@@ -9,7 +9,7 @@ const Notfound = () => {
         <h2 id='Notfound'>404</h2>
         <p id='error-p'>That page appears to be missing !
             <br />
-            Take a ride back <Link to='/' id='error-link'>  <SlHome/> Home</Link>
+            Take a ride back <Link to='eShop-project' id='error-link'>  <SlHome/> Home</Link>
         </p>
     </div>
   )
